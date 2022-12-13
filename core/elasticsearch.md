@@ -25,6 +25,8 @@ Then, enable it inside the API Platform configuration:
 parameters:
     # ...
     env(ELASTICSEARCH_HOST): 'http://localhost:9200'
+    # for an https with username/password, the format will be : 
+    env(ELASTICSEARCH_HOST): 'https://user:password@host:port' # the port can be 443 for an https
 
 api_platform:
     # ...
